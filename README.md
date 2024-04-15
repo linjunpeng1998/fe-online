@@ -14,4 +14,10 @@
 
 ## 需求
 
-1. 当前已有初始化的`monorepo`仓库
+> 当前已有初始化的`monorepo`仓库, 已经包含`backend/auth-service`, `apps/auth-app`, `apps/manage-app`项目。
+
+- `backend/auth-service`项目已包含登陆接口、获取用户信息接口
+  - 如何设计`BFF`层架构, 统一这两个接口，使得前端只需要调用一次登陆，返回登陆成功的`token`以及`用户信息`
+- `auth-app` 采用`React`实现，`manage-app` 采用`Vue`实现
+  - 需要使用`auth-app` 调用第一步实现的接口，并存储相关的`token`信息
+  - `manage-app` 采用微前端方案内嵌 `auth-app`的功能
