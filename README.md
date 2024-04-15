@@ -21,3 +21,5 @@
 - `auth-app` 采用`React`实现，`manage-app` 采用`Vue`实现
   - 需要使用`auth-app` 调用第一步实现的接口，并存储相关的`token`信息
   - `manage-app` 采用微前端方案内嵌 `auth-app`的功能
+
+> 其他加分点：如何设计`git flow`规范, 设计`vue`, `react`, `backend`开发规范 etc. 或者请写出关于前端架构的思考，想法。
